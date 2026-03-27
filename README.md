@@ -6,7 +6,7 @@ O projeto tem como objetivo mostrar como integrar aplicações desktop com servi
 ---
 
 ## 🚀 Funcionalidades
-- Consumo de endpoints REST (GET, POST, PUT, DELETE).
+- Consumo usando o verbo HTTP (GET).
 - Tratamento de respostas em **JSON**.
 - Interface gráfica simples para interação com os dados.
 - Estrutura modular para facilitar manutenção e expansão.
