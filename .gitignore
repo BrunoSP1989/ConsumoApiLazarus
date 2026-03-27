@@ -1,0 +1,38 @@
+# Arquivos Binários e Executáveis
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+
+# Pastas de Compilação e Unidades (Geradas pelo Lazarus)
+lib/
+backup/
+units/
+bin/
+
+# Arquivos de Configuração do Usuário (Sessão do IDE)
+*.lps
+*.lrs
+*.compiled
+*.res
+*.rc
+
+# Arquivos Temporários e de Backup
+*.~*
+*.bak
+*.old
+
+# Arquivos de Depuração e Linker
+*.ppu
+*.o
+*.a
+*.map
+*.dbg
+
+# Bancos de Dados Locais (Opcional - remova se quiser subir o DB)
+*.fdb
+*.gdb
+*.mdb
+*.sqlite
+

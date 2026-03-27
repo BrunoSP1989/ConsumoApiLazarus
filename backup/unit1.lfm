@@ -1,10 +1,10 @@
 object Form1: TForm1
   Left = 500
-  Height = 522
+  Height = 468
   Top = 333
   Width = 480
   Caption = 'Pesquisar Cidades'
-  ClientHeight = 522
+  ClientHeight = 468
   ClientWidth = 480
   LCLVersion = '4.4.0.0'
   OnCreate = FormCreate
@@ -51,7 +51,7 @@ object Form1: TForm1
   object ComboBox2: TComboBox
     Left = 24
     Height = 23
-    Top = 104
+    Top = 80
     Width = 430
     ItemHeight = 15
     TabOrder = 1
@@ -60,7 +60,7 @@ object Form1: TForm1
   object Button1: TButton
     Left = 326
     Height = 27
-    Top = 56
+    Top = 16
     Width = 128
     AutoSize = True
     Caption = 'Localizar Cidades'
@@ -78,8 +78,8 @@ object Form1: TForm1
   end
   object Memo1: TMemo
     Left = 24
-    Height = 272
-    Top = 160
+    Height = 280
+    Top = 120
     Width = 432
     Font.CharSet = ANSI_CHARSET
     Font.Height = -13
@@ -94,7 +94,7 @@ object Form1: TForm1
   object Button2: TButton
     Left = 24
     Height = 27
-    Top = 464
+    Top = 416
     Width = 432
     Caption = 'Verificar Aliquotas CBS / IBS'
     Font.CharSet = ANSI_CHARSET
@@ -117,7 +117,7 @@ object Form1: TForm1
   object Label2: TLabel
     Left = 24
     Height = 15
-    Top = 64
+    Top = 56
     Width = 62
     Caption = 'Municipios:'
   end

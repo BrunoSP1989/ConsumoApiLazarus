@@ -43,11 +43,11 @@ procedure TForm1.ComboBox1Change(Sender: TObject);
 begin
   if ComboBox1.ItemIndex >= 0 then
   begin
-    UF := ComboBox1.Text;
-    CodigoUF := IntToStr(Integer(ComboBox1.Items.Objects[ComboBox1.ItemIndex]));
+    UF := ComboBox1.Text;  // adicionar o valor a variavel
+    CodigoUF := IntToStr(Integer(ComboBox1.Items.Objects[ComboBox1.ItemIndex])); // pega o valor do codigo referente ao estado
 
 
-    Button1Click(Sender); // carrega os municípios da UF selecionada
+    Button1Click(Sender); // carrega os municípios da UF selecionada da procedure do botão
   end;
 end;
 
@@ -117,7 +117,7 @@ begin
     end;
 
   finally
-    JsonData.Free;   // libera na memoria o JSONDATA
+    JsonData.Free;      // libera na memoria o JSONDATA
     Client.Free;       // libera na memoria o CLIENTE HTTP
   end;
 end;
@@ -157,15 +157,15 @@ begin
       + FormatDateTime('yyyy-mm-dd', Date)
     );
 
-    JsonData   := GetJSON(resposta);
-    JsonDataUF := GetJSON(respostaUF);
+    JsonData       := GetJSON(resposta);
+    JsonDataUF     := GetJSON(respostaUF);
     JsonDataUniao  := GetJSON(respostaUniao);
-    obj        := JsonData as TJSONObject;
-    objUF      := JsonDataUF as TJSONObject;
-    objUniao   := JsonDataUniao as TJSONObject;
+    obj            := JsonData as TJSONObject;
+    objUF          := JsonDataUF as TJSONObject;
+    objUniao       := JsonDataUniao as TJSONObject;
 
     Memo1.Lines.Clear;
-    Memo1.Lines.Add('Estado: '+ UF);
+    Memo1.Lines.Add('Unidade Federativa: '+ UF);
     Memo1.Lines.Add('Cidade: ' + ComboBox2.Text);
     Memo1.Lines.Add('Código Municipal: ' + codigoMunicipio);
     Memo1.Lines.Add('Código Federal: ' + codigoUF);
